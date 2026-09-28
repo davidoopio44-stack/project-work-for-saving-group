@@ -1,0 +1,58 @@
+body{
+  margin: 0;
+  padding: 20px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+form {
+  background-color: burlywood;
+  margin: 0 auto;
+  padding: 20px;
+}
+  label {
+  display: block;
+  margin-bottom: 6px; /* Replaces the 'gap' property since they are side-by-side */
+  width: 100%;
+  color:blueviolet;
+  font-weight: 600;
+}
+button {
+    width: 50%;
+    align-content: space-around;
+    
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+input{
+
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  color: blueviolet;
+  border-radius: 10px;
+  outline-color: blueviolet;
+}
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  outline: bliueviolet;
+  
+}
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+color: #4CAF50;
+}
