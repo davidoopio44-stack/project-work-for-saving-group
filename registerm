@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <h1>MEMBER REGISTRATION</h1>
+        <label for="name">
+            MEMBER'S FULL NAME
+        </label>
+        <input type="text" placeholder="enter your name">
+        <label for="member's no">MEMBER'S NUMBER</label>
+        <input type="number" placeholder="select member number">
+        <label for="gender">GENDER</label>
+        <select name="gender" id="gender">
+            <option value="">Male</option>
+            <option value="">Female</option>
+            <option value="">other</option>
+        </select>
+        <label for="email">Email</label>
+        <input type="email" placeholder="email">
+        <label for="password">password</label>
+        <div class="password-wrapper">
+            <input type="password" class="password-field" placeholder="enter password">
+            <span class="toggle-password">👁️</span>
+        </div>
+        <input type="password" placeholder="enter password">
+        <label for="confirm password" > confirm password</label>
+        <input type="password" placeholder="confirm">
+        <button>register</button>
+    </form>
+        <!-- JavaScript to make the eye toggle work -->
+    <script>
+        const toggles = document.querySelectorAll('.toggle-password');
+        
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', function () {
+                // Find the input field right next to this toggle eye
+                const passwordField = this.previousElementSibling;
+                
+                if (passwordField.type === 'password') {
+                    passwordField.type = 'text';
+                    this.textContent = '🙈'; // Optional: Change icon when visible
+                } else {
+                    passwordField.type = 'password';
+                    this.textContent = '👁️';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
